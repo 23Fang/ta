@@ -1,0 +1,340 @@
+/* 公共样式开始 */
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background-color: #eee;
+}
+.notShow{
+  display: none;
+}
+.operationBtn{
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+/* 公共样式结束 */
+
+
+/* 头部样式开始 */
+header{
+  height: 70px;
+  background-color: #354457;
+  color: #b3bcc5;
+  font-size: 14px;
+  padding-left: 20px;
+}
+
+header > img{
+  /* logo */
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+}
+header > span{
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 70px;
+  margin-left:5px ;
+}
+/* 头部样式结束 */
+
+.stuContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 左侧菜单栏样式开始 */
+.leftMenu{
+  width: 15%;
+  background-color: #4d5e70;
+  color: #b3bcc5;
+  height: calc(100vh - 70px);
+  line-height: 60px;
+  font-size: 16px;
+  font-weight: 100;
+}
+.leftMenu > h2{
+  font-weight: 200;
+  font-size: 20px;
+  padding-left: 15px;
+  line-height: 50px;
+}
+.leftMenu > div{
+  text-align: center;
+  width: 100%;
+}
+.leftMenu .itemActive{
+  background-color: #ddd;
+  color: #354457;
+}
+/* 左侧菜单栏样式结束 */
+
+/* 右侧区域样式开始 */
+.rightContent{
+  width: 85%;
+  height: calc(100vh-70);
+}
+.searchBox{
+  display:flex;
+  height: 60px;
+  align-items: center;
+}
+#selectSearchItem{
+  margin: 10px 0 10px 10px;
+}
+#searchStu{
+  width: 35%;
+  height: 20px;
+  padding: 5px;
+  margin: 10px;
+  border: none;
+  outline: none;
+}
+
+.searchBtn{
+  background-color: #5cb85c;
+}
+.backBtn{
+  background-color: #d9534f;
+}
+#addStuRandom{
+  background-color: #5cb85c;
+}
+#addStuByForm{
+  background-color: #d9534f;
+  margin-left: 10px;
+}
+/* 右侧内容中间部分表格内容 */
+table {
+  width: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-size: 14px;
+}
+
+table thead {
+  background-color: #e3e8ee;
+  color: #646987;
+}
+
+tbody {
+  background-color: #fff;
+}
+table > thead > tr {
+  background-color: #e3e8ee;
+}
+
+table > th {
+  display: table-cell;
+  /* 让标签元素以表格单元格的形式呈现 */
+  vertical-align: inherit;
+  /* 定义粗体字符 */
+  font-weight: bold;
+  /* 居中 */
+  text-align: center;
+}
+table .editBtn {
+  background-color: #5cb85c;
+}
+/* 右侧内容中间部分表格内容操作下的删除按钮 */
+table .delBtn {
+  background-color: #d9534f;
+}
+
+/* 右侧新增学生界面 */
+.addStu {
+  width: 50%;
+  height: auto;
+  margin: 30px auto;
+}
+/* 右侧新增学生界面性别 */
+.stuGender {
+  margin-left: 30px;
+}
+
+.stuGenderSelect {
+  text-align: center;
+}
+
+.stuGenderSelect > span {
+  margin: 0 15px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.addStu button {
+  margin-right: 10px;
+}
+/* 右侧新增学生界面表单 */
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+form label {
+  font-size: 18px;
+}
+/* 选择没有gender class样式的label */
+form label:not(.gender) {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+form div:not(.nochange) span {
+  color: #5cb85c;
+}
+
+form div {
+  margin: 15px 0;
+}
+form div input {
+  font-size: 16px;
+  padding: 5px;
+}
+
+#addStuBtn {
+  background-color: #5cb85c;
+}
+
+#backStuList {
+  background-color: #d9534f;
+}
+/* 提交和返回按钮 */
+.formBtn {
+  padding-left: 155px;
+}
+/* 新增学生模块样式结束 */
+/* 外层的 ul */
+
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  /* 弹性盒布局，上面两行代码就是让我的子元素水平居中 */
+  list-style: none;
+  user-select: none;
+  /* 禁止用户选中 */
+}
+
+.pagination li {
+  cursor: pointer;
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  user-select: none;
+  /* 不允许用户选中 */
+}
+
+.pagination li:hover {
+  background-color: rgb(190, 190, 190);
+  color: #eee;
+}
+
+.pagination li.currentPage {
+  background-color: rgb(84, 138, 197);
+  color: #eee;
+}
+/* 右侧区域样式结束 */
+
+.addStu {
+  width: 50%;
+  height: auto;
+  margin: 30px auto;
+}
+
+.stuGender {
+  margin-left: 30px;
+}
+
+.stuGenderSelect {
+  text-align: center;
+}
+
+.stuGenderSelect > span {
+  margin: 0 15px;
+}
+
+.form-group {
+  margin: 10px 0;
+}
+
+.addStu button {
+  margin-right: 10px;
+}
+
+form {
+  width: 410px;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+form label:not(.gender) {
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 5px;
+}
+
+form div {
+  margin: 10px 0;
+}
+
+#addStuBtn {
+  background-color: #5cb85c;
+}
+
+#backStuList {
+  background-color: #d9534f;
+}
+
+.formBtn {
+  padding-left: 120px;
+}
+/* 新增学生模块样式结束 */
+/* 外层的 ul */
+/* 分页内容 */
+
+.pagination {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  /* 弹性盒布局，上面两行代码就是让我的子元素水平居中 */
+  list-style: none;
+  user-select: none;
+  /* 禁止用户选中 */
+}
+
+.pagination li {
+  cursor: pointer;
+  margin: 0 10px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  text-align: center;
+  user-select: none;
+  /* 不允许用户选中 */
+}
+
+.pagination li:hover {
+  background-color: rgb(190, 190, 190);
+  color: #eee;
+}
+
+.pagination li.currentPage {
+  background-color: rgb(84, 138, 197);
+  color: #eee;
+}
+
+/* 右侧区域样式结束 */
